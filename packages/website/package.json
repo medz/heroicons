@@ -1,0 +1,10 @@
+{
+  "name": "@bytegem/heroicons-website",
+  "version": "1.0.0",
+  "description": "The heroicons doc website.",
+  "main": "index.js",
+  "repository": "https://github.com/bytegem/heroicons",
+  "author": "Byte Gem <service@bytegem.net>",
+  "license": "MIT",
+  "private": true
+}

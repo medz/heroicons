@@ -1,0 +1,21 @@
+{
+  "name": "@bytegem/vue-heroicons",
+  "version": "0.2.0",
+  "description": "A set of free MIT-licensed high-quality SVG icons for Vue.js development.",
+  "main": "index.js",
+  "module": "dist/vue-heroicons.esm.js",
+  "types": "dist/vue-heroicons.d.ts",
+  "repository": "https://github.com/bytegem/heroicons",
+  "author": "Byte Gem <service@bytegem.net>",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.0"
+  },
+  "scripts": {
+    "build": "scripts/build.js"
+  },
+  "devDependencies": {
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
