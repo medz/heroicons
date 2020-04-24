@@ -1,5 +1,5 @@
 import Vue, { VNode, CreateElement } from 'vue';
-import { iconNames as icons } from '../icons';
+import { iconsMap } from '../icons';
 import { formatIconName } from '../utils';
 
 export const Heroicons = Vue.extend({
@@ -8,7 +8,7 @@ export const Heroicons = Vue.extend({
       required: true,
       type: String,
       validator(name: string): boolean {
-        return icons.indexOf(formatIconName(name)) !== -1;
+        return Object.getOwnPropertyNames(iconsMap).indexOf(name) !== -1;
       }
     }
   },

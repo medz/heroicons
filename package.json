@@ -27,6 +27,10 @@
     "vue": "^2.6.11"
   },
   "scripts": {
+    "dev": "vue-cli-service serve",
     "build": "node scripts/build.js"
+  },
+  "vuePlugins": {
+    "service": ["packages/website/@vue-cli-plugin.js"]
   }
 }

@@ -67,9 +67,10 @@ module.exports = function() {
 
   // 写入命名
   fs.writeFileSync(resolve('names.ts'), `
-export const names: string[] = [
-${names.map(name => '  \'' + name + '\',').join('\r\n')}
-];
+import * as components from './components';
+export const names = {
+${names.map(name => `  '${name}': components.${name},`).join('\r\n')}
+};
   `.trim());
 
   // 写入组件索引文件
@@ -83,7 +84,7 @@ ${names.map(name => '  \'' + name + '\',').join('\r\n')}
     resolve('index.ts'),
     `
 export * from './components';
-export { names as iconNames } from './names';
+export { names as iconsMap } from './names';
     `.trim()
   );
 };

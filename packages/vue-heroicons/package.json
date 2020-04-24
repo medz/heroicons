@@ -9,7 +9,7 @@
   "author": "Byte Gem <service@bytegem.net>",
   "license": "MIT",
   "peerDependencies": {
-    "vue": "^2.0"
+    "vue": ">=2.0.0"
   },
   "scripts": {
     "build": "scripts/build.js"
